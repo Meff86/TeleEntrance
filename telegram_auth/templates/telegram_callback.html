@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратный вызов Telegram</title>
+</head>
+<body>
+<h1>Обратный вызов Telegram</h1>
+{% if user.is_authenticated %}
+    <p>Вы успешно авторизованы через Telegram. Добро пожаловать, {{ user.username }}!</p>
+{% else %}
+    <p>Пожалуйста, авторизуйтесь через Telegram.</p>
+{% endif %}
+</body>
+</html>
